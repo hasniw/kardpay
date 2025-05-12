@@ -56,17 +56,20 @@ export const Footer = () => {
               
               <div>
                 <Image src="/images/pci.svg" alt="PCI DSS" width={80} height={31} className='my-1.5'/>
-                <div className="flex items-center gap-[4px] max-md:justify-center">
-                  <p className="text-white text-[10px] font-semibold">
-                    ©kardpay. All rights reserved. Powered by
+                <div className="flex flex-col items-start gap-[4px] max-md:justify-center text-[10px] font-semibold">
+                  <p className="text-white">
+                    ©kardpay. All rights reserved.
                   </p>
-                  <Image
-                    src="/images/avalanche.svg"
-                    alt="Avalanche Logo"
-                    width={80}
-                    height={20}
-                    className="object-contain mt-[2px]"
+                  <span className="inline-flex items-center gap-[4px] whitespace-nowrap">
+                    Powered by
+                    <Image
+                      src="/images/avalanche.svg"
+                      alt="Avalanche Logo"
+                      width={60}
+                      height={16}
+                      className="inline-block object-contain"
                     />
+                  </span>
                 </div>
               </div>
             </section>

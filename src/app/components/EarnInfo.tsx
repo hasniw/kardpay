@@ -38,10 +38,10 @@ export const EarnInfo = () => {
             className="z-10 brightness-0 invert mb-[6px] ml-[28px]"
           />
           <div className="relative z-10 px-[28px]">
-            <p className="text-white font-poppins text-[30px] font-semibold not-italic leading-[60px]">
+            <p className="text-white font-poppins text-[24px] md:text-[30px] font-semibold not-italic">
               Cashback
             </p>
-            <p className="text-white font-poppins text-[20px] font-semibold not-italic leading-normal">
+            <p className="text-white font-poppins text-[16px] md:text-[20px] font-semibold not-italic leading-normal">
               Earn up to 8% on all your purchases.
             </p>
           </div>
@@ -74,8 +74,8 @@ export const EarnInfo = () => {
                 height={50}
                 className="mb-[6px] brightness-0 invert"
               />
-              <p className="text-white font-poppins text-[24px] font-semibold">Earn</p>
-              <p className="text-white text-[16px]">Up to 26% APR</p>
+              <p className="text-white font-poppins text-[24px] md:text-[30px] font-semibold">Earn</p>
+              <p className="text-white text-[16px] md:text-[20px]">Up to 26% APR</p>
             </div>
 
             <Image
@@ -92,12 +92,12 @@ export const EarnInfo = () => {
               hidden: { opacity: 0, y: 30 },
               visible: { opacity: 1, y: 0 },
             }}
-            className="flex flex-col items-center justify-center bg-[rgba(217,217,217,0.1)] rounded-[28px] pt-[28px] px-[28px] w-full max-w-[550px] min-h-[236px] text-center lg:text-left"
+            className="flex flex-col items-center lg:items-start justify-center bg-[rgba(217,217,217,0.1)] rounded-[28px] pt-[28px] px-[28px] w-full max-w-[550px] min-h-[236px] text-center lg:text-left"
           >
-            <p className="text-white font-poppins text-[30px] font-semibold not-italic leading-[60px]">
+            <p className="text-white font-poppins text-[24px] md:text-[30px] font-semibold not-italic ">
               kardpay for Business
             </p>
-            <p className="text-white font-poppins text-[20px] font-semibold not-italic leading-normal">
+            <p className="text-white font-poppins text-[16px] md:text-[20px] font-semibold not-italic leading-normal">
               Share the gift of everything Kardpay with those who matter most to your business.
             </p>
           </motion.div>

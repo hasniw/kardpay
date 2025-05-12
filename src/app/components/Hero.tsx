@@ -38,12 +38,14 @@ export const Hero = () => {
   return (
     <section className="w-full text-white min-h-screen flex flex-col justify-between mt-4 lg:mt-[45px]">
       <header className="w-full px-6 py-6 flex items-center justify-around mb-[36px]">
-        <Image
-          src="/images/brands/kardpay-logo.svg"
-          alt="kardpay-logo"
-          width={147}
-          height={35}
-        />
+        <div className="relative w-[90px] sm:w-[120px] lg:w-[147px] h-auto aspect-[147/35]">
+          <Image
+            src="/images/brands/kardpay-logo.svg"
+            alt="kardpay-logo"
+            fill
+            className="object-contain"
+          />
+        </div>
         <motion.a
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.98 }}
@@ -59,7 +61,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
-          className="text-white text-center font-poppins text-[32px] sm:text-[42px] md:text-[48px] lg:text-[54px] font-semibold leading-[60px] mb-10"
+          className="text-white text-center font-poppins text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-semibold leading-[60px] mb-10"
         >
           Your money, your rules.
         </motion.h2>
@@ -85,7 +87,7 @@ export const Hero = () => {
         </motion.div>
       </div>
 
-      <div className="w-full overflow-hidden py-6 mb-[4px] md:mb-[40px]">
+      <div className="w-full overflow-hidden py-6 mb-[4px] lg:mb-[40px]">
         <motion.div
           className="flex gap-[40px] px-6"
           style={{ minWidth: 'max-content' }}
