@@ -8,7 +8,7 @@ export const FeaturesSection = () => {
     'nike', 'lastminute-light', 'spotify', 'uber', 'grab',
     'samsung-light', 'airbnb', 'hotels', 'amazon', 'careem',
     'havaianas', 'avis', 'burger-king', 'bonvoy', 'all-light',
-    'dubai-autodrome', 'four-seasons',
+    'dubai-autodrome',
   ]
 
   const crypto = ['avax', 'usdc', 'usdt', 'kardpay-crypto']
@@ -20,7 +20,7 @@ export const FeaturesSection = () => {
       content: (
         <>
           <Image
-            src="/images/kardpay-visa.png"
+            src="/images/kardpay-card.svg"
             alt="kardpay-card"
             width={450}
             height={300}
@@ -42,16 +42,17 @@ export const FeaturesSection = () => {
       title: 'Gift cards',
       text: "Every card is more than a payment, it's a gift. With over 1,500 cards available.",
       content: (
-        <div className="flex flex-wrap gap-[20px] justify-center items-center flex-1">
+        <div className="grid grid-cols-4 gap-5 w-full pb-10">
           {giftCardBrands.map(brand => (
-            <Image
-              key={brand}
-              src={`/images/brands/${brand}.svg`}
-              alt={`${brand} logo`}
-              width={0}
-              height={0}
-              className="h-auto w-auto"
-            />
+            <div key={brand} className="flex justify-center items-center">
+              <Image
+                src={`/images/brands/${brand}.svg`}
+                alt={`${brand} logo`}
+                width={0}
+                height={0}
+                className="h-auto w-auto object-contain"
+              />
+            </div>
           ))}
         </div>
       ),
@@ -78,7 +79,7 @@ export const FeaturesSection = () => {
       title: 'Cashback',
       text: 'Enjoy up to 8% cashback on all your purchases.',
       content: (
-        <div className="flex justify-center mt-[20px]">
+        <div className="flex flex-1 items-end justify-center -mb-8">
           <Image src="/images/cashback-iphone.png" alt="cashback" width={266} height={339} />
         </div>
       ),
@@ -118,14 +119,16 @@ export const FeaturesSection = () => {
                 visible: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 0.6, ease: 'easeOut' }}
-              className="snap-start shrink-0 w-[85vw] sm:w-[320px] md:w-[360px] lg:w-[459px] max-w-[459px] h-auto lg:h-[549px] rounded-[28px] bg-[rgba(217,217,217,0.1)] p-[24px] pt-[0px] flex flex-col items-center justify-between"
+              className="snap-start shrink-0 w-[85vw] sm:w-[320px] md:w-[360px] lg:w-[459px] max-w-[459px] h-auto lg:h-[549px] rounded-[28px] bg-[rgba(217,217,217,0.1)] p-8 pt-[0px] flex flex-col items-center justify-between"
             >
-              <h3 className="text-white font-poppins text-[22px] sm:text-[30px] font-semibold leading-[40px] sm:leading-[60px] mt-[42px] mb-2">
-                {feature.title}
-              </h3>
-              <p className="text-white font-poppins text-[16px] sm:text-[20px] font-semibold leading-normal mb-4">
-                {feature.text}
-              </p>
+              <div className="flex flex-col items-center justify-center">
+                <h3 className="text-white font-poppins text-[22px] sm:text-[30px] font-semibold leading-[40px] sm:leading-[60px] mt-[42px] mb-2">
+                  {feature.title}
+                </h3>
+                <p className="text-white font-poppins text-[16px] sm:text-[20px] font-semibold leading-normal mb-4">
+                  {feature.text}
+                </p>
+              </div>
               {feature.content}
             </motion.div>
           ))}

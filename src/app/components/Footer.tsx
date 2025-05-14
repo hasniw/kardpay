@@ -32,7 +32,7 @@ const linksMap = {
 
 export const Footer = () => {
   return (
-    <footer className="flex flex-col justify-center items-center px-16 pt-20 max-md:px-6 max-sm:px-4 font-poppins text-white bg-black">
+    <footer className="flex flex-col justify-center items-center px-16 pt-20 max-md:px-6 max-sm:px-4 font-poppins">
       <div className="w-full h-[0.2px] bg-[#606060]" />
 
       <div className="w-full py-[50px] px-[150px] max-xl:px-[80px] max-lg:px-[40px] max-md:px-0">
@@ -44,9 +44,9 @@ export const Footer = () => {
                 alt="Kardpay Logo"
                 width={147}
                 height={35}
-                className="object-contain mb-[6px]"
+                className="object-contain mb-[2px]"
               />
-              <h1 className="text-white font-poppins text-[20px] font-semibold leading-normal mt-2">
+              <h1 className="text-white font-poppins text-[10px] font-semibold leading-normal">
                 Your money, your rules.
               </h1>
               <div className="flex gap-[12px] mt-[23px] mb-[28px] max-md:justify-center">
