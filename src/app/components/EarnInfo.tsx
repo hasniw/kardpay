@@ -11,7 +11,7 @@ export const EarnInfo = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
         viewport={{ once: true }}
-        className="text-white font-poppins text-[30px] font-semibold leading-[60px] not-italic mb-[36px] text-center lg:text-left"
+        className="text-white font-poppins text-[20px] sm:text-[28px] font-semibold leading-[40px] not-italic mb-[36px] text-center lg:text-left"
       >
         Even when you spend, you earn through cashback and investments.
       </motion.h2>

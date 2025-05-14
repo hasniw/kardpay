@@ -44,7 +44,7 @@ export const Footer = () => {
                 alt="Kardpay Logo"
                 width={147}
                 height={35}
-                className="object-contain mb-[2px]"
+                className="object-contain mb-[2px] w-[90px] sm:w-[110px] lg:w-[138px] h-auto"
               />
               <h1 className="text-white font-poppins text-[10px] font-semibold leading-normal">
                 Your money, your rules.
@@ -54,7 +54,7 @@ export const Footer = () => {
                 <Image src="/images/google-play.svg" alt="Play Store" width={100.1} height={28.6} />
               </div>
               
-              <div>
+              <div className='flex flex-col items-center md:items-start'>
                 <Image src="/images/pci.svg" alt="PCI DSS" width={80} height={31} className='my-1.5'/>
                 <div className="flex flex-col items-start gap-[4px] max-md:justify-center text-[10px] font-semibold">
                   <p className="text-white">

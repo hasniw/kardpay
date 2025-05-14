@@ -20,7 +20,7 @@ export const FeaturesSection = () => {
       content: (
         <>
           <Image
-            src="/images/kardpay-card.svg"
+            src="/images/kardpay-card.png"
             alt="kardpay-card"
             width={450}
             height={300}
@@ -93,7 +93,7 @@ export const FeaturesSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="text-white font-poppins text-[24px] sm:text-[30px] font-semibold leading-[36px] sm:leading-[60px] text-center mb-[36px]"
+        className="text-white font-poppins text-[20px] sm:text-[28px] font-semibold leading-[36px] sm:leading-[40px] text-center mb-[36px]"
       >
         Unlock amazing features, anywhere in the world.
       </motion.h2>
@@ -121,7 +121,7 @@ export const FeaturesSection = () => {
               transition={{ duration: 0.6, ease: 'easeOut' }}
               className="snap-start shrink-0 w-[85vw] sm:w-[320px] md:w-[360px] lg:w-[459px] max-w-[459px] h-auto lg:h-[549px] rounded-[28px] bg-[rgba(217,217,217,0.1)] p-8 pt-[0px] flex flex-col items-center justify-between"
             >
-              <div className="flex flex-col items-center justify-center">
+              <div className="flex flex-col items-start">
                 <h3 className="text-white font-poppins text-[22px] sm:text-[30px] font-semibold leading-[40px] sm:leading-[60px] mt-[42px] mb-2">
                   {feature.title}
                 </h3>

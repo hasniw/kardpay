@@ -19,7 +19,7 @@ export const DiscoverSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
         viewport={{ once: true }}
-        className="text-white font-poppins text-[30px] font-semibold not-italic leading-[60px] mb-[36px] text-center"
+        className="text-white font-poppins text-[20px] sm:text-[28px] font-semibold not-italic leading-[40px] mb-[36px] text-center"
       >
         Spend, share, and earn, all from one powerful app.
       </motion.h2>
@@ -29,7 +29,7 @@ export const DiscoverSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
         viewport={{ once: true }}
-        className="w-full bg-[#0B0B0B] rounded-[28px] flex flex-col lg:flex-row items-center justify-between max-w-[1147px] px-6 sm:px-10 lg:px-[90px] py-12 gap-12"
+        className="w-full bg-[#0B0B0B] rounded-[28px] flex flex-col lg:flex-row items-center justify-between max-w-[1147px] px-6 sm:px-10 lg:px-[90px] py-12 gap-12 lg:pb-0"
       >
         {/* Texte + icônes */}
         <motion.div

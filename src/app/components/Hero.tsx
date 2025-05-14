@@ -52,13 +52,9 @@ export const Hero = () => {
   }
 
   const [viewportHeight, setViewportHeight] = useState('100vh')
-  const [scrollLogos, setScrollLogos] = useState(true)
 
   useEffect(() => {
-    // On fixe la hauteur au premier render (pour iOS)
     setViewportHeight(`${window.innerHeight}px`)
-    // On détermine si on doit activer le scroll des logos (>=768px)
-    setScrollLogos(window.innerWidth >= 768)
   }, [])
 
   return (
@@ -90,7 +86,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
-          className="text-white text-center font-poppins text-[20px] sm:text-[24px] md:text-[32px] lg:text-[38px] font-semibold leading-[32px] md:leading-[60px] mb-[-42px]"
+          className="text-white text-center font-poppins text-[24px] sm:text-[24px] md:text-[32px] lg:text-[38px] font-semibold leading-[32px] md:leading-[60px] mb-[-42px]"
         >
           Your money, your rules.
         </motion.h2>
@@ -126,16 +122,8 @@ export const Hero = () => {
         <motion.div
           className="flex gap-[40px] px-6"
           style={{ minWidth: 'max-content' }}
-          animate={
-            scrollLogos
-              ? { x: ['0%', '-33.333%'] }
-              : { x: '0%' }
-          }
-          transition={
-            scrollLogos
-              ? { repeat: Infinity, duration: 30, ease: 'linear' }
-              : {}
-          }
+          animate={{ x: ['0%', '-33.333%'] }}
+          transition={{ repeat: Infinity, duration: 30, ease: 'linear' }}
         >
           {repeatedBrands.map((name, index) => (
             <div
